@@ -108,7 +108,7 @@ void setup()
 
   delay(2000);
 
-  radio.initialize(RF69_433MHZ,EEProm.nodeID,EEProm.networkGroup);  
+  radio.initialize(EEProm.RF_freq,EEProm.nodeID,EEProm.networkGroup);  
   radio.encrypt("89txbe4p8aik5kt3"); 
 
   //rf.init(EEProm.nodeID, EEProm.networkGroup, 
